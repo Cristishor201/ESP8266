@@ -39,6 +39,37 @@ After the installation occured, press *Finish*, with the Start option checked, a
 
 Now it's time to create a virtual machine with ubuntu os machine we downloaded early.
 
+**Step 1**<br>
+Click *New* button, for creating a new disk image.<br>
+![vBox_7](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_7.png)
+
+**Step 2**<br>
+Select a name for the image (*I choosed Ubuntu Server 20 LTS*), the location on the hard drive or external hard drive; For type choose *Linux*, and for version choose *Ubuntu (64 bit)*.<br>
+![vBox_8](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_8.png)
+
+**Step 3**<br>
+In the next window choose the RAM Memory. More that you allocate, faster guest macine will run. However you should keep some memory also for host machine.
+In this example I will choose 3100 (3GB), as I think it's more than enough, that we will not have the GUI part of the Linux.<br>
+![vBox_9](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_9.png)
+
+**Step 4**<br>
+Select to *create a virtual hard disk now*. This will be the virtual image of the operating system.<br>
+![vBox_10](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_10.png)
+
+**Step 5**<br>
+And then choose virtualBox disk Image.<br>
+![vBox_11](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_11.png)
+
+**Step 6**<br>
+Always choose Dinamically allocated, as it save you hard disk space, which is not used by the guest os.<br>
+![vBox_12](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_12.png)
+
+**Step 7**<br>
+And finally, choose a limit of hard drive for ubuntu. This can be as higher as you want. You can change later the location of the image, but you can't choose to upgrade this limmit later.<br>
+I will choose 50 GB, as is more than enough for this tutorial or any tools and installation there.<br>
+![vBox_13](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_13.png)
+
+**Step 8**<br>
 
 
 <s>(installation (download, prerequites, install | Configuring, issues case)
