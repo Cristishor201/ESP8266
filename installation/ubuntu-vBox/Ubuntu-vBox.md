@@ -9,8 +9,6 @@ Then download Ubuntu or Linux. Both Virtual Box and Ubuntu, should be free, so t
 Now it's time to install and configure Virtual Box.
 The process it's quite simple, but for the sake of it, I will put all the necessary details.
 
-## Install
-
 **Step 1**<br>
 Run the installation of the virtual box. Click next.<br>
 ![vBox_1](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_1.png)
@@ -35,7 +33,7 @@ and then press *install*.<br>
 After the installation occured, press *Finish*, with the Start option checked, as we continue the setup, in the next chapter.<br>
 ![vBox_6](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_6.png)
 
-# Installation
+# Setup virtual image
 
 Now it's time to create a virtual machine with ubuntu os machine we downloaded early.
 
@@ -70,7 +68,75 @@ I will choose 50 GB, as is more than enough for this tutorial or any tools and i
 ![vBox_13](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_13.png)
 
 **Step 8**<br>
+Now, go to setings for the image we just created..<br>
+![vBox_14]((https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_14.png)
+
+**Step 9**<br>
+Under the Storage section, in the Controller: IDE section, with the Host drive E selected..<br>
+![vBox_15](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_15.png)
+
+**Step 10**<br>
+Choose to change the disc with the ubuntu image we just downloaded before. This will mount the image, so that installation can begin.<br>
+![vBox_16](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_16.png)
+
+**Step 11**<br>
+Then we can start the *Ubuntu Server 20 LTS*, in *Detachable Start* state.<br>
+![vBox_17](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_17.png)
+
+# Installation
+
+**Step 12**<br>
+The actual installation begins. We are prompted to select our language. I will choose English for myself.<br>
+![vBox_18](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_18.png)
+
+**Step 13**<br>
+On next screen we can choose the layout of the keyboard. I will live it as it is.
+![vBox_19](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_19.png)
+
+**Step 14**<br>
+We don't need network connection between this computer and other computer, so we will skeep this step.<br>
+![vBox_20](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_20.png)
+
+**Step 15**<br>
+We will skip also the settings for proxy server.<br>
+![vBox_21](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_21.png)
+
+**Step 16**<br>
+Hit next when it asking for ubuntu archive mirror.<br>
+![vBox_22](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_22.png)
+
+**Step 17**<br>
+On the next screen we are asked if we want to use ubuntu on one disc or more. I will live it as default.<br>
+![vBox_23](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_23.png)
+
+**Step 18**<br>
+This is just a Summary of the installation. Hit *Done* for next, and on the prompt with confirmation of destructive action, choose *Continue*.<br>
+![vBox_24](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_24.png)
+
+**Step 19**<br>
+Choose a name for the *user name* of this OS, a *name for this "computer"*, a *username* and a *password*. It's a good habbit to fill up al the inputs here.<br>
+![vBox_25](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_25.png)
+
+**Step 20**<br>
+Check in option for *install OpenSSH server*, and hit *Done*.<br>
+![vBox_26](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_26.png)
+
+**Step 21**<br>
+Here you can install extra options feature. We can install them later, so we will skip this as well.<br>
+![vBox_27](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_27.png)
+
+**Step 22**<br>
+After installing everything, press *Reboot Now*.<br> 
+![vBox_28](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_28.png)
+
+You may get error for removing optical drive. Hit enter anyway, for continue.
+
+**Step 23**<br>
+Then login with your credentials.
+![vBox_29](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_29.png)
 
 
-<s>(installation (download, prerequites, install | Configuring, issues case)
+
+
+<s>(installation (download, prerequites, install | Configuring, issues case, Install & configure toolchain + cod)
 steps per sub-chapter</s>
