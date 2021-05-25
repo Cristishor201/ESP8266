@@ -135,6 +135,38 @@ You may get error for removing optical drive. Hit enter anyway, for continue.
 Then login with your credentials.
 ![vBox_29](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_29.png)
 
+## Obtional
+
+This section is for accessing VM with SSH from the host OS. This is the only way if you want to use copy-paste between host and the guest.<br><br>
+
+Press Machine/ ACPI Shutdown, if your virtual machine it's still running. This is the shut down for it.<br>
+![vBox_30](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_30.png)
+
+And then restarted it by *Start/Headless Start*.
+
+**Step 1**<br>
+Go again in Settings for this image, but this time on Network section. NAT adappter should be checked in. Click on the Advanced to expand the settings.<br>
+![vBox_31](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_31.png)
+
+**Step 2**<br>
+Then press *Port Forwarding*. Click on plus icon to add a new rule for the tunnel. And then choose some name and values. As you can see I chosed port 2222 for host, and port 22 for guest. I choosed them as they are not so common ports allocated by other services.<br>
+![vBox_32](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_32.png)
+
+**Step 3**<br>
+Download PuTTY from [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). I have Windows 64 bit version, so I will use  [putty-64bit-0.75-installer.msi](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.75-installer.msi). Installed it by going fast through the installation process. All I did here, is just checked in the desktop shorcut for it.
+
+**Step 4**<br>
+Start the PuTTY. And setup a new connection, but adding *localhost* on Host Name *2222* for the host port of local machine, and save this connection as *Ubuntu vBox*.<br>
+![vBox_33](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_33.png)
+
+**Step 5**<br>
+Open the connection with PuTTY. It may pop out a Security Alert window, but we trust the virtual machine we just installed, so we will accept it.<br>
+If it crush, just restart the PuTTY.<br>
+![vBox_34](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_34.png)
+
+**Step 6**<br>
+Just login with your credentials, and you are good to go. 
+
 
 
 
