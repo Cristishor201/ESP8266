@@ -165,7 +165,32 @@ If it crush, just restart the PuTTY.<br>
 ![vBox_34](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_34.png)
 
 **Step 6**<br>
-Just login with your credentials, and you are good to go. 
+Just login with your credentials, and you are good to go.
+
+# Installing build tools
+
+Now it's time to install and configure what we need for developement in ESP8266.
+
+**Step 1**<br>
+Run this command:<br>
+```sudo apt-get install make unrar-free autoconf automake libtool gcc g++ \
+gperf flex bison texinfo gawk ncurses-dev libexpat-dev python3-dev \
+python3 python3-serial sed git unzip bash help2man wget bzip2
+```
+<br><br>Put your password if it asked for it. And press y, for accepting installed these packages.
+
+**Step 2**<br>
+After it is finished run also this one:<br>
+```
+sudo apt-get install libtool-bin
+```
+
+**Step 3**<br>
+For installing *VirtualBox Guest Additions* in Ubuntu simply run:<br>
+```
+sudo apt-get install virtualbox-guest-additions-iso
+```
+<br><br>Press *y* for yes, when it asks for.
 
 
 
