@@ -135,7 +135,7 @@ You may get error for removing optical drive. Hit enter anyway, for continue.
 Then login with your credentials.
 ![vBox_29](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_29.png)
 
-## Obtional
+## Obtional 1 - copy-paste capability
 
 This section is for accessing VM with SSH from the host OS. This is the only way if you want to use copy-paste between host and the guest.<br><br>
 
@@ -167,6 +167,7 @@ If it crush, just restart the PuTTY.<br>
 **Step 6**<br>
 Just login with your credentials, and you are good to go.
 
+
 # Installing build tools
 
 Now it's time to install and configure what we need for developement in ESP8266.
@@ -177,6 +178,7 @@ Run this command:<br>
 gperf flex bison texinfo gawk ncurses-dev libexpat-dev python3-dev \
 python3 python3-serial sed git unzip bash help2man wget bzip2
 ```
+
 <br><br>Put your password if it asked for it. And press y, for accepting installed these packages.
 
 **Step 2**<br>
@@ -193,6 +195,39 @@ sudo apt-get install virtualbox-guest-additions-iso
 <br><br>Press *y* for yes, when it asks for.
 
 
+
+## Obtional 2 - shared folder
+
+If you want to have more control over virtual machine, like a shared folder, this will show you & me, the know-how. You need Guest addition install for this option.
+
+Again, if your virtual machine still running, type ```exit``` on PuTTY first, and then *ACPI Shutdown* on guest machine.<br>
+![vBox_30](https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_30.png)
+
+**Step 1**<br>
+Go to settings for the selected virtual image.<br>
+![vBox_14]((https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_14.png)
+
+**Step 2**<br>
+Select section *Shared Folders*, and "*+*" icon. Select the folder you want, and then check *Auto-mount*.
+![vBox_35]((https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_35.png)
+
+**Step 3**<br>
+Start the virtual machine, and log in with your credentials.<br>
+Then type ```df -h```<br>
+![vBox_36]((https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_36.png)
+
+<br><br>As you can see, the selected folder *Github*, can be seen on the virtual machine under the name *sf_Github*.
+
+**Step 4**<br>
+Try to access its location with ```cd /media/sf_Github``` (or your sf_folder).
+<br><br>
+If it give you *Permission denied* error, then type ```sudo adduser cristishor vboxsf``` where cristishor it's my user. Type the password. Then try again.
+
+**Step 5**<br>
+Now, type ```ls -al```, and you should see all folders and files.
+
+19:01 Ammaoro#2**
+</s> 
 
 
 <s>(installation (download, prerequites, install | Configuring, issues case, Install & configure toolchain + cod)
