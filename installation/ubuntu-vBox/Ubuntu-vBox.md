@@ -226,9 +226,27 @@ If it give you *Permission denied* error, then type ```sudo adduser cristishor v
 **Step 5**<br>
 Now, type ```ls -al```, and you should see all folders and files.
 
-19:01 Ammaoro#2**
-</s> 
 
+# Configuring
 
-<s>(installation (download, prerequites, install | Configuring, issues case, Install & configure toolchain + cod)
+## Kernel installation
+Before we proceed, we need to configuring the usb adapter. In a normal situation this would be done automatically, but in this situation we access the board thorough virtual box.
+
+**Step 1**<br>
+Plug in the usb adapter ( usb - micro-usb) to connect the board and the PC.<br>
+
+**Step 2**<br>
+Right click on the usb icon, on the bellow taskbar of the virtual machine window.<br>
+![vBox_37]((https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_37.png)
+
+**Step 3**<br>
+Then you can select the device. It should be something like *UART Bridge Controller*. You can selected manually each time, or you can setup it automatically.<br>
+![vBox_38]((https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_38.png)
+
+**Step 4**<br>
+Click on the *USB Settings...* (see picture from above). Next from the *USB* section, click on the *"+" usb icon*, and select the device. In my case is *Silicon Labs CP2102N USB to UART Bridge Controller*. And then press *OK*.<br>
+![vBox_39]((https://github.com/Cristishor201/ESP8266/tree/main/installation/ubuntu-vBox/vBox_39.png)
+
+**Step 5**<br>
+Type ```lsusb```. If it display your connected device, you completed kernel installation successfully.
 steps per sub-chapter</s>
