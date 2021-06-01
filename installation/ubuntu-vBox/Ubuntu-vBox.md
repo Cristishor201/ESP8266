@@ -249,4 +249,21 @@ Click on the *USB Settings...* (see picture from above). Next from the *USB* sec
 
 **Step 5**<br>
 Type ```lsusb```. If it display your connected device, you completed kernel installation successfully.
+
+
+## Setup of Toolchain
+
+**Step 1**<br>
+Download the arhive depending on the OS bit verssion of Linux you installed.<br>
+For 64-bit Linux use: [https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz](https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz)<br>
+For 32-bit Linux use: [https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-i686.tar.gz](https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-i686.tar.gz)
+
+<br><br>In my case, I will use the 64 bit verssion, by:<br>
+```wget https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz```
+
+**Step 2**<br>
+
+
+
+<s> Install & configure toolchain + cod)
 steps per sub-chapter</s>
