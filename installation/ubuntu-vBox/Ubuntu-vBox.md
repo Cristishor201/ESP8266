@@ -262,8 +262,17 @@ For 32-bit Linux use: [https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp
 ```wget https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz```
 
 **Step 2**<br>
+Create *esp* directory, and go inside it.<br>
+```
+mkdir -p ~/esp
+cd ~/esp
+```
 
-
+**Step 3**<br>
+Extract the archive to *esp* folder.<br>
+```
+tar -xzf ~/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz
+```
 
 <s> Install & configure toolchain + cod)
 steps per sub-chapter</s>
