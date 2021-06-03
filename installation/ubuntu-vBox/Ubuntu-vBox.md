@@ -251,14 +251,14 @@ Click on the *USB Settings...* (see picture from above). Next from the *USB* sec
 Type ```lsusb```. If it display your connected device, you completed kernel installation successfully.
 
 
-## Setup of Toolchain
+## Setup of Environment
 
 **Step 1**<br>
 Download the arhive depending on the OS bit verssion of Linux you installed.<br>
 For 64-bit Linux use: [https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz](https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz)<br>
 For 32-bit Linux use: [https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-i686.tar.gz](https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-i686.tar.gz)
 
-<br><br>In my case, I will use the 64 bit verssion, by:<br>
+In my case, I will use the 64 bit verssion, by downloaded it with:<br>
 ```wget https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz```
 
 **Step 2**<br>
@@ -274,5 +274,38 @@ Extract the archive to *esp* folder.<br>
 tar -xzf ~/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz
 ```
 
-<s> Install & configure toolchain + cod)
-steps per sub-chapter</s>
+**Step 4**<br>
+Next download *ESP8266_RTOS_SDK*.<br>
+```
+git clone --recursive https://github.com/espressif/ESP8266_RTOS_SDK.git
+```
+
+**Step 5**<br>
+Edit the *.profile* file, which is one level up.<br>
+```
+nano ../.profile
+```
+<br><br>At the end of the file we add:<br>
+```
+export PATH="$PATH:$HOME/esp/xtensa-lx106-elf/bin"
+export IDF_PATH="$HOME/esp/ESP8266_RTOS_SDK"
+```
+<br><br>Then save the file with *ctrl + O*. And exit with *ctrl + x*.
+
+**Step 6**<br>
+Type ```printenv PATH``` to see if it's installed corectly. If it's Ok, it should give you a long link, else a short error.<br>
+
+**Step 7**<br>
+Type ```exit``` on PuTTY, and then login again. Then ```printenv IDF_PATH``` should be able to print the link to *ESP8266_RTOS_SDK* folder.
+
+**Step 8**<br>
+Run ```sudo apt-get install -y python3-pip``` for making pip works.
+
+**Step 9**<br>
+Install python dependency by:<br>
+```
+python3 -m pip3 install --user -r $IDF_PATH/requirements.txt
+```
+
+**Step 10**<br>
+That's it. All you need to do now, it's to pick up an example, and build it.
