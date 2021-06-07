@@ -113,5 +113,9 @@ We will skip the installation of the apps, by clicking on *Done*.<br>
 ![os_20](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_20.PNG)
 
 
+# Configuring
+
+
+
 <s>(installation (download, prerequites, install | Configuring, issues case)
 steps per sub-chapter </s>
