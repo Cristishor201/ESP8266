@@ -37,4 +37,81 @@ In the next window, give to your *CD/DVD reader* a greater priority than *SATA h
 After all is set, press *F10* key for save and exit, and then *Enter* key for *OK*.<br>
 ![os_4](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_4.jpg) 
 
-<s>(installation (download, prerequites, install | Configuring, issues case)steps per sub-chapter </s>
+
+# Installation
+
+**Step 1**<br>
+In the first step Ubuntu it loads, it will checkthe integrity of the DVD. You can skp it if you want, but I highly recommended it, for making sure that we do not encounter other errors later on.<br>
+![os_5](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_5.PNG)
+
+**Step 2**<br>
+Select your language, and then choose to *Install Ubuntu*. In my case I will choose *English*.<br>
+![os_6](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_6.PNG)
+
+**Step 3**<br>
+Live the layout of keyboard as default with both English (US). This is the default keyboard layout for myself. Later on you can add another one as you want.<br>
+![os_7](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_7.PNG)
+
+**Step 4**<br>
+If you not connected the computer with a internet acces through LAN, it will ask you to connect through wireless.<br>
+If you encounter this window, check in *Connect to this network*, and then select your Wi-fi and press *Connect* button, and then enter your password.<br>
+Then hit *Continue*.<br>
+![os_8](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_8.jpg)
+
+**Step 5**<br>
+Live it as default: choose *Normal installation*, and the option to *Download updates*.<br>
+Hit again *Continue* button.<br>
+![os_9](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_9.PNG)
+
+**Step 6**<br>
+If you have already installed Ubuntu before, this window may appear.<br>
+In this case I will erase everything and I will start over, by selecting *Erase disk and install Ubuntu*. Then press *Install Now*, and on the prompt choose *Continue*.<br>
+![os_10](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_10.jpg)
+
+**Step 7**<br>
+Choose your time zone by typing your city, and then choose from the suggested list. I am from Bucharest, so I will press *Continue*.<br>
+![os_11](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_11.PNG)
+
+**Step 8**<br>
+Then choose a *name* for the computer, a *computer's name* (how is this device seen by others), and a *username* and a *password*. I make my choice as you can see. Also I checked in *Log in automatically*, as I get bored to enter by so many times the password on Ubuntu, but you are free to pick up the other choice.<br>
+![os_12](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_12.PNG)
+
+**Step 9**<br>
+After installation is finished, press *Restart Now*.<br>
+![os_13](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_13.PNG)
+
+**Step 10**<br>
+Remove the *DVD/CD*, put the try back, and press *Enter* key for continue.<br>
+![os_14](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_14.PNG)
+
+**Step 11**<br>
+If it throw a crash like this one, power off it from the button, and then restart it.<br>
+![os_15](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_15.jpg)
+
+**Step 12**<br>
+Next connect your accounts. I will connect this time only the Ubuntu account, as I already have it. If you want to make one too, go to [ubuntu account](https://login.ubuntu.com/+login) on any device. And then Hit *Next* / *Skip*.<br>
+![os_16](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_16.PNG)
+
+**Step 13**<br>
+Livepatch give you the ability to update your OS, without the necesity to restart. For set it up, all you need to do is just press *Set Up Livepatch*, enter your credentials, and then Click *Continue* when it pop up a message that alert you the need of aving an Ubuntu one account.<br>
+Enter once more your password for Ubuntu account, and then choose a password for the Licepatch.<br>
+A message text should appear that *You're all set*. Click *Next* green to continue.<br>
+![os_17](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_17.PNG)
+
+**Step 14**<br>
+I chosed not sending informations, but you are free to do so.<br>
+I checked *No, don't send system info*. Then Click *Next*.<br>
+![os_18](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_18.PNG)
+
+**Step 15**<br>
+You can skip the activation of Location, as it's not needed for this setup, but I will activated as I can use it elsewhere within Ubuntu.<br>
+Hit *Next*.<br>
+![os_19](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_19.PNG)
+
+**Step 16**<br>
+We will skip the installation of the apps, by clicking on *Done*.<br>
+![os_20](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/os_20.PNG)
+
+
+<s>(installation (download, prerequites, install | Configuring, issues case)
+steps per sub-chapter </s>
