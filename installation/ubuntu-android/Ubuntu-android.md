@@ -16,14 +16,16 @@ mkdir cristishor
 cd cristishor
 ```
 **Step 4**<br>
-Install sudo command first.<br>
+Update the packages.<br>
 ```
-pkg install tsu
+apt update && apt upgrade
 ```
-<s>
-https://github.com/MFDGaming/ubuntu-in-termux
-https://www.youtube.com/watch?v=Q7NDoMDobCw&t=121s
 
+<s>
+https://www.youtube.com/watch?v=Q7NDoMDobCw&t=121s - youtube alias termux
+https://github.com/MFDGaming/ubuntu-in-termux
+https://www.youtube.com/watch?v=fo4SZQng4qc - users is not in the sudoers
+https://www.youtube.com/watch?v=GD1ns3gyYgk&list=LL&index=32 -VVVV
 </s>
 
 <s>(installation (download, prerequites, install | Configuring, issues case)
