@@ -5,28 +5,31 @@ This is the only way I found without rooting your phone.
 
 **Step 1**<br>
 Go to [https://play.google.com/store/apps/details?id=com.termux](https://play.google.com/store/apps/details?id=com.termux) and install *Termux* on your Android OS.
+![android_1](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-android/android_1.jpg)
 
 **Step 2**<br>
 Run Termux.
 
 **Step 3**<br>
-Create a personal directory and go inside it.<br>
+We will download a package manager.<br>
 ```
-mkdir cristishor
-cd cristishor
+pkg install proot-distro -y
 ```
+
 **Step 4**<br>
+Install Ubuntu 20.04.<br>
+```
+proot-distro install ubuntu-20.04
+```
+
+**Step 5**<br>
+For open Ubuntu on Termux, run:<br>
+```
+proot-distro login ubuntu-20.04
+```
+
+**Step 6**<br>
 Update the packages.<br>
 ```
-apt update && apt upgrade
+apt-get update -y
 ```
-
-<s>
-https://www.youtube.com/watch?v=Q7NDoMDobCw&t=121s - youtube alias termux
-https://github.com/MFDGaming/ubuntu-in-termux
-https://www.youtube.com/watch?v=fo4SZQng4qc - users is not in the sudoers
-https://www.youtube.com/watch?v=GD1ns3gyYgk&list=LL&index=32 -VVVV
-</s>
-
-<s>(installation (download, prerequites, install | Configuring, issues case)
-steps per sub-chapter</s>
