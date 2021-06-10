@@ -67,3 +67,31 @@ source ../usr/etc/bash.bashrc
 
 **Step 5**<br>
 Done it.
+
+
+## Obtional 2 - Tunneling with PC:
+
+If you want to have both consoles side by side on the PC, you can acces the terminal from a desktop terminal.
+
+------------------------------
+
+**Step 1**<br>
+Firstly install openssh package on Ubuntu.<br>
+```
+apt install openssh-server
+```
+
+Change root password: passwd -> enter new password
+Configure sshd file: nano /etc/ssh/sshd_config -> Port 2022 -> PermitRootLogin yes - ctrl o, ctrl x
+Restart openssh service: service ssh restart
+Finding the IP: ifconfig
+
+<s>
+https://www.youtube.com/watch?v=fo4SZQng4qc - users is not in the sudoers
+port forwarding ubuntu - google
+ubuntu tunneling - google
+shared folder ?
+</s>
+
+<s>(installation (download, prerequites, install | Configuring, issues case)
+steps per sub-chapter</s>
