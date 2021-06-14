@@ -13,7 +13,8 @@ Run Termux.
 **Step 3**<br>
 We will download a package manager.<br>
 
-    pkg install proot-distro -y
+    pkg install proot-distro
+	y
 
 
 **Step 4**<br>
@@ -32,6 +33,32 @@ Update the packages.<br>
 
 	apt-get update -y
 
+**Step 7**<br>
+It's time to create a new user, as we are not going to use root for secure purpose.<br>
+Firstly let's install sudo command.<br>
+For this type in this order:<br>
+
+    su -
+    apt-get install sudo -y
+
+**Step 8**<br>
+Create a new user.<br>
+
+    sudo adduser cristishor
+
+Choose a *password* for you, and then confirm it again. Also it will ask you to enter *your name* / full name, *room number*, *work phone*, *home phone*, and *other*.<br>
+But I will put only my surname, and skip the rest.<br>
+Finally type *y* than you confirm the information above.
+
+**Step 9**<br>
+And then give sudo right with:<br>
+
+    usermod -aG sudo cristishor
+
+**Step 10**<br>
+For more secure reason type a password for root superuser also, after:<br>
+
+    passwd
 
 
 ## Obtional 1 - Using alias:
@@ -63,9 +90,52 @@ Reload the shell with:<br>
 
 	source ../usr/etc/bash.bashrc
 
+**Step 5**<br>
+Done it.<br>
+
+
+## Obtional 2 - Shared folders:
+
+If you want to access created files or folders inside termux or Ubuntu proot-distro on your android device, then this section is for you.
+
+**Step 1**<br>
+Go to [https://play.google.com/store/apps/details?id=nextapp.fx](https://play.google.com/store/apps/details?id=nextapp.fx) and install *FX File Explorer* on your Android OS.<br>
+![android_3](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-android/android_3.jpg)
+
+**Step 2**<br>
+Open *FX File Explorer*, and accept the License Agreement. Accept media permission. Then it will show up some presentation, you can watch it or skip it by pressing *back button*. It will prompt to buy the premium versson, but we will need only the free one.
+
+**Step 3**<br>
+Click on the 3 dots in the top right corner, and then select *Connect to Storage*.<br>
+![android_4](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-android/android_4.jpg)
+
+
+**Step 4**<br>
+Click on the 3 horizontal bar in the top left corner, and then select Termux.<br>
+![android_5](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-android/android_5.jpg)
 
 **Step 5**<br>
-Done it.
+You can choose the home folder of termux, but I will create a new folder, by accessing again the 3 vertical dots in the top right corner, and then *Creat new folder*, give it a name, and then *Select* it.<br>
+![android_6](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-android/android_6.jpg)
+
+**Step 6**<br>
+For accesing a shared folder directly from ubuntu, you need to first create a folder on the android. For that go to *Main Storage* within **FX File Explorer**.<br>
+Then select the 3 dots in the top right corner, and select *New* / *Folder*, and give it a name.<br>
+I gave it `ubuntu-cristishor`.<br>
+![android_7](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-android/android_7.jpg)
+
+**Step 7**<br>
+Open termux, and run `ubuntu` or `proot-distro login ubuntu-20.04`.
+
+**Step 8**<br>
+Change the username we just created early with:<br>
+
+    su - cristishor
+
+**Step 9**<br>
+Create a shorcut for the external folder we just created with:<br>
+
+    ln -s /storage/emulated/0/ubuntu-cristishor /home/cristishor
 
 
 ## Obtional 2 - Tunneling with PC:
@@ -73,51 +143,20 @@ Done it.
 If you want to have both consoles side by side on the PC, you can acces the terminal from a desktop terminal.
 
 First things first, you need to be already on ubuntu. If you are on termux, type again `proot-distro login ubuntu-20.04`.<br>
-![android_3](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-android/android_3.jpg)
+<s>![android_3]https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-android/android_3.jpg)</s>
 
-------------------------------
+<s>mai trebuie!!!!!!!!!!</s>
 
-**Step 1**<br>
-Firstly install openssh package on Ubuntu.<br>
-
-	apt install openssh-server -y
-
-
-**Step 2**<br>
-Change the password for the root super user.<br>
-```passwd```, then type your password, and once more to confirm it.
-
-**Step 3**<br>
-Open configuration file for ssh.<br>
-
-	nano /etc/ssh/sshd_config
-
-
-**Step 4**<br>
-Then add the following lines somewhere.<br>
-
-    Port 2222
-    PermitRootLogin yes
-
-
-Then press `ctrl` + `o` for saving the file. Don't forget for pressing enter for override the file.<br>
-And then `ctrl` + `x` for exit.
-
-**Step 5**<br>
-Restart opnessh by:<br>
-
-	service ssh restart
+===================================
 
 <s>
 https://www.youtube.com/watch?v=fo4SZQng4qc - users is not in the sudoers
-https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding
+
 https://askubuntu.com/questions/886313/what-is-the-simplest-way-to-have-remote-gui-access-to-ubuntu-16-04-server-from
 https://johan.driessen.se/posts/Setting-up-an-SSH-tunnel-to-access-Remote-Desktop-using-Putty-and-SSHD-on-Linux/ --------------------------- cel mai probabil
 
 https://www.youtube.com/watch?v=N8f5zv9UUMI -mai intai
 https://www.youtube.com/watch?v=UWPaw8xUmKc
-
-shared folder ?
 </s>
 
 <s>(installation (download, prerequites, install | Configuring, issues case)
