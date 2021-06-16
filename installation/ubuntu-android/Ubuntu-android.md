@@ -51,9 +51,19 @@ But I will put only my surname, and skip the rest.<br>
 Finally type *y* than you confirm the information above.
 
 **Step 9**<br>
-And then give sudo right with:<br>
+Now give sudo right to the new user we just created.<br>
+while you are in the root user, type:<br>
 
-    usermod -aG sudo cristishor
+    nano /etc/sudoers
+
+Use the arrows to move up and down.<br>
+Then under the *User privilege specification* section, add:<br>
+
+	cristishor ALL=(ALL:ALL) ALL
+
+Then press `ctrl` + `o` for saving the file. Don't forget for pressing enter for override the file.<br>
+And then `ctrl` + `x` for exit.
+
 
 **Step 10**<br>
 For more secure reason type a password for root superuser also, after:<br>
@@ -143,20 +153,86 @@ Create a shorcut for the external folder we just created with:<br>
 If you want to have both consoles side by side on the PC, you can acces the terminal from a desktop terminal.
 
 First things first, you need to be already on ubuntu. If you are on termux, type again `proot-distro login ubuntu-20.04`.<br>
-<s>![android_3]https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-android/android_3.jpg)</s>
 
-<s>mai trebuie!!!!!!!!!!</s>
+=============================================================
+
+# Install & Configure Toolchain
+
+Now it's time to install the actual tools to run & make builds.
+
+**Step 1**<br>
+Install prerequites by:<br>
+
+	sudo apt-get install nano gcc git wget make libncurses-dev flex bison gperf python3 python3-serial
+	y
+
+**Step 2**<br>
+Download the toolchain itself, for 64 bit verssion.<br>
+
+	sudo wget https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz
+
+**Step 3**<br>
+Create a new folder, and extract the archive to it.<br>
+
+	mkdir -p ~/esp
+	cd ~/esp
+	tar -xzf ../xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz
+	
+**Step 4**<br>
+Download ESP8266_RTOS_SDK, by:<br>
+
+	git clone --recursive https://github.com/espressif/ESP8266_RTOS_SDK.git
+
+**Step 5**<br>
+Open the `.profile` file, with:<br>
+
+	sudo nano ~/.profile
+
+And add these lines:<br>
+
+	export PATH="$PATH:$HOME/esp/xtensa-lx106-elf/bin;/root/.local/bin"
+	export IDF_PATH="$HOME/esp/ESP8266_RTOS_SDK"
+
+Then press `ctrl` + `o` for saving the file. Don't forget for pressing enter for override the file.<br>
+And then `ctrl` + `x` for exit.
+
+
+**Step 6**<br>
+Logout and then login again.<br>
+
+	logout
+	su - cristishor
+
+**Step 7**<br>
+If all are set corectly until this step, this command should print a long string link...<br>
+
+	printenv PATH
+
+and this one should print a short one.<br>
+
+	printenv IDF_PATH
+
+**Step 8**<br>
+Install pip command.<br>
+
+	sudo apt install python3-pip
+
+**Step 9**<br>
+Install required python packages:<br>
+
+	sudo python3 -m pip install --user -r $IDF_PATH/requirements.txt
 
 ===================================
 
 <s>
-https://www.youtube.com/watch?v=fo4SZQng4qc - users is not in the sudoers
-
+https://kinsta.com/knowledgebase/ssh-connection-refused/
+https://linuxconfig.org/bash-netstat-command-not-found-debian-ubuntu-linux
+https://kifarunix.com/allow-deny-specific-users-to-login-via-ssh-on-ubuntu-18-04/
+https://johan.driessen.se/posts/Setting-up-an-SSH-tunnel-to-access-Remote-Desktop-using-Putty-and-SSHD-on-Linux/
 https://askubuntu.com/questions/886313/what-is-the-simplest-way-to-have-remote-gui-access-to-ubuntu-16-04-server-from
-https://johan.driessen.se/posts/Setting-up-an-SSH-tunnel-to-access-Remote-Desktop-using-Putty-and-SSHD-on-Linux/ --------------------------- cel mai probabil
 
-https://www.youtube.com/watch?v=N8f5zv9UUMI -mai intai
-https://www.youtube.com/watch?v=UWPaw8xUmKc
+https://www.cyberciti.biz/tips/ssh-public-key-based-authentication-how-to.html
+https://www.tunnelbear.com/pricing
 </s>
 
 <s>(installation (download, prerequites, install | Configuring, issues case)
