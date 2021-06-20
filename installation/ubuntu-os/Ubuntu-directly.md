@@ -138,3 +138,68 @@ After that you can close the window by pressing the *x* button.<br>
 
 # Install & Configuring the toolchain
 
+Now it's time to install the develompent environment for ESP8266 board.
+
+**Step 1**<br>
+Click again on the 9 dots icon or press *windows key* on your keyboaard, and then search for the `terminal`. Then right click on it and then *Add to Favorites*, as we will use it a while.<br>
+Then left click on it to open it. Alternatively you can launch it with the *ctrl + alt + t* hotkey.<br>
+![os_26](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_26.PNG)
+
+**Step 2**<br>
+Run:
+
+	sudo apt-get install gcc git wget make libncurses-dev flex bison gperf python3 python3-serial
+
+Enter your credentials, and then type `y` for yes.
+
+**Step 3**<br>
+Download the toolchain with:
+
+	sudo wget https://dl.espressif.com/dl/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz
+
+**Step 4**<br>
+Create *esp* directory, and go inside it.
+
+	mkdir -p ~/esp
+	cd ~/esp
+
+**Step 5**<br>
+Extract the archive to *esp* folder.
+
+	tar -xzf ~/xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz
+
+**Step 6**<br>
+Next download *ESP8266_RTOS_SDK*.
+
+	git clone --recursive https://github.com/espressif/ESP8266_RTOS_SDK.git
+
+**Step 7**<br>
+Edit the *.profile* file, which is one level up.
+
+	nano ../.profile
+
+At the end of the file we add:
+
+	export PATH="$PATH:$HOME/esp/xtensa-lx106-elf/bin"
+	export IDF_PATH="$HOME/esp/ESP8266_RTOS_SDK"
+
+Then save the file with *ctrl + O*. And exit with *ctrl + x*.
+
+**Step 8**<br>
+Type `printenv PATH` to see if it's installed corectly. If it's Ok, it should give you a long link, else a short error.
+
+**Step 9**<br>
+Type `exit`, and log off or restart then ubuntu PC. After login re-open the *Terminal* console from the taskbar, where we just saved.<br>
+Then type `printenv IDF_PATH`. It should print a short link, instead of nothing.
+
+**Step 10**<br>
+Run `sudo apt-get install -y python3-pip` for making pip works. Enter your credentils if it asked to.
+
+**Step 11**<br>
+Install python dependency by:
+
+	python3 -m pip install --user -r $IDF_PATH/requirements.txt
+
+**Step 12**<br>
+Type `exit` to quit from the terminal.<br>
+That's it.
