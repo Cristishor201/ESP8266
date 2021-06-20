@@ -21,13 +21,13 @@ Right click again on the ubuntu image, but this time choose *Burn disc image*. A
 **Step 5**<br>
 After the writing the DVD has completed succesefully, hit Close button, and inserting on the computer where you want to install it.
 
-**Step 7**<br>
+**Step 6**<br>
 In order to boot from the DVD, instead of the hard drive, we need to go to BIOS and make a few changes there.<br>
 In order to do that restart or turn on your computer. In the very begining press multimple times key *F2*. You should see a blue window like this one, in a short while.<br>
 Go to *Boot* tab, and then select *Boot Device Priority*. For that use arrows to navigate through menu, and to make selection press *Enter* key.<br>
 ![os_3](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_3.jpg) 
 
-**Step 8**<br>
+**Step 7**<br>
 In the next window, give to your *CD/DVD reader* a greater priority than *SATA hardrive*. In this example I put the *DVD reader* into the first place, and *SATA hardrive* anywhere after it. To change position use *+* or *-*.<br>
 After all is set, press *F10* key for save and exit, and then *Enter* key for *OK*.<br>
 ![os_4](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_4.jpg) 
@@ -111,10 +111,30 @@ Then if it detect something, click on *Install Now*, followed by your credential
 Then Restart your computer with *Restart Now*, or just click *Ok*, depending of the buttons you have.<br>
 ![os_20](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_20.PNG)
 
+**Step 18**<br>
+Ubuntu doesn't required an antivirus like Windows. But I highly recommended to setup the firewall for it.<br>
+To do this, press again on the 9 dots icon, but thi time search for `ubuntu`, and then click on the *Ubuntu Software* icon.<br>
+![os_21](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_21.PNG)
+
+**Step 19**<br>
+After it's loading, press on the *magnifier icon* in the top left corner of the window, and search for `gufw`.<br>
+![os_22](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_22.PNG)
+
+**Step 20**<br>
+Click on the *Firewall Configuration* application, to get in. And then press *Install* green button, to install it.<br>
+Enter your credentials, when it asks you to.<br>
+![os_23](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_23.PNG)
+
+**Step 21**<br>
+After it's installed, click *x* to close the *Ubuntu Software* window.<br>
+Hit again the 9 dots icon, and then search for `gufw` again to find the application.<br>
+![os_24](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_24.PNG)
+
+**Step 22**<br>
+After open it, all you need to do is to change it's *Status* to on, and make sure that *Incoming* it's set up to *Deny*. This is the default configuration.<br>
+After that you can close the window by pressing the *x* button.<br>
+![os_25](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_25.PNG)
+
 
 # Install & Configuring the toolchain
 
-
-
-<s>(installation (download, prerequites, install | Configuring, issues case)
-steps per sub-chapter </s>
