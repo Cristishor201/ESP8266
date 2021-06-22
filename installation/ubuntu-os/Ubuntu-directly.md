@@ -84,53 +84,53 @@ Next connect your accounts. I will connect this time only the *Ubuntu Single Sig
 Hit the *Next* green button.<br>
 ![os_15](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_15.PNG)
 
-**Step 13**<br>
+**Step 12**<br>
 Livepatch give you the ability to update your OS, without the necesity to restart. For set it up, all you need to do is just press *Set Up Livepatch*, enter your credentials, and then Click *Continue* when it pop up a message that alert you the need of having an Ubuntu one account.<br>
 Enter once more your password for *Ubuntu Single Sign-On account*, and then choose a password for the Livepatch.<br>
 A message text should appear that *You're all set*.<br>
 Click *Next* green to continue.<br>
 ![os_16](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_16.PNG)
 
-**Step 14**<br>
+**Step 13**<br>
 I choosed not sending informations, but you are free to do so.<br>
 I checked *No, don't send system info*. Then Click *Next*.<br>
 ![os_17](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_17.PNG)
 
-**Step 15**<br>
+**Step 14**<br>
 You can skip the activation of Location, as it's not needed for this setup. I will do the same<br>
 Hit *Next*.<br>
 ![os_18](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_18.PNG)
 
-**Step 16**<br>
+**Step 15**<br>
 We will skip the installation of the apps, by clicking on *Done*.<br>
 ![os_19](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_19.PNG)
 
-**Step 17**<br>
+**Step 16**<br>
 click on the 9 dots icon, and on the search bar type in `software`, and then click on the second application, *Software Update*.<br>
 Then if it detect something, click on *Install Now*, followed by your credentials.<br>
 Then Restart your computer with *Restart Now*, or just click *Ok*, depending of the buttons you have.<br>
 ![os_20](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_20.PNG)
 
-**Step 18**<br>
+**Step 17**<br>
 Ubuntu doesn't required an antivirus like Windows. But I highly recommended to setup the firewall for it.<br>
 To do this, press again on the 9 dots icon, but thi time search for `ubuntu`, and then click on the *Ubuntu Software* icon.<br>
 ![os_21](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_21.PNG)
 
-**Step 19**<br>
+**Step 18**<br>
 After it's loading, press on the *magnifier icon* in the top left corner of the window, and search for `gufw`.<br>
 ![os_22](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_22.PNG)
 
-**Step 20**<br>
+**Step 19**<br>
 Click on the *Firewall Configuration* application, to get in. And then press *Install* green button, to install it.<br>
 Enter your credentials, when it asks you to.<br>
 ![os_23](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_23.PNG)
 
-**Step 21**<br>
+**Step 20**<br>
 After it's installed, click *x* to close the *Ubuntu Software* window.<br>
 Hit again the 9 dots icon, and then search for `gufw` again to find the application.<br>
 ![os_24](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_24.PNG)
 
-**Step 22**<br>
+**Step 21**<br>
 After open it, all you need to do is to change it's *Status* to on, and make sure that *Incoming* it's set up to *Deny*. This is the default configuration.<br>
 After that you can close the window by pressing the *x* button.<br>
 ![os_25](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-os/os_25.PNG)
