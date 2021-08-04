@@ -42,8 +42,8 @@ For that go to
 
 
 <s>
-cablu functional ?
-problema device windows 10
-instalat driver silicon..
+instalat driverul la vBox
+instalat driverul la linux directly?
+
 https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/get-started/index.html#build-and-flash
 make menuconfig...</s>
