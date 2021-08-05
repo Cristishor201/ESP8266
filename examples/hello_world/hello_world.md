@@ -15,7 +15,7 @@ This is the part with instruction about how to build, flash and display the prog
 This is the part with instruction about how to build, flash and display the program if you are running ubuntu on VirtualBox. It will print **hello world** on the console, once it is uploded to the board.
 
 **Step 1**<br>
-Run Oracle virtualBox, and then start the virtual machine, in the *Detachable Start* state.<br>
+Run Oracle virtualBox, and then start the virtual machine, in the *Headless Start* state.<br>
 ![vBox_1](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/vBox_7.png)
 
 **Step 2**<br>
@@ -33,17 +33,10 @@ Copy the example with hello world, and then go inside it.<br>
 	cd hello_world/
 
 **Step 5**<br>
+Open a Putty connection with the VM.
+
+ 
 Connect the board to PC.<br>
-[poza]
+![vBox_37](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/vBox_37.jpg)
 
 **Step 6**<br>
-If nothing happens, it's because you need to install the driver.<br>
-For that go to 
-
-
-<s>
-instalat driverul la vBox
-instalat driverul la linux directly?
-
-https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/get-started/index.html#build-and-flash
-make menuconfig...</s>
