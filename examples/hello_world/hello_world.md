@@ -35,8 +35,54 @@ Copy the example with hello world, and then go inside it.<br>
 **Step 5**<br>
 Open a Putty connection with the VM.
 
- 
+**Step 6**<br> 
 Connect the board to PC.<br>
 ![vBox_37](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/vBox_37.jpg)
 
-**Step 6**<br>
+**Step 7**<br>
+We need to figure it out which port the board is using.<br>
+For that type:<br>
+```
+	dmesg | grep tty
+```
+
+Then look up for the *CP210x converter* device.<br>
+For me that doesn't have any other external USB, it's **ttyUSB0**.
+
+**Step 8**<br>
+Type:<br>
+```
+	make menuconfig
+```
+
+Then go to *Serial flasher config*/ *Default serial port*.<br>
+In my case I will gonna use the default one, which is **/dev/ttyUSB0**.<br>
+Hit *OK* once.<br>
+Then select *Save* / *OK* / *Exit*.<br>
+And after the configuration has been saved, Select *Exit* twice.
+
+**Step 9**<br>
+Add your username to the dialout group:<br>
+```
+	sudo adduser cristishor dialout
+```
+
+**Step 10**<br>
+Now, you can build with:<br>
+```
+	make all
+```
+
+**Step 11**<br>
+For installing the program into the board, type:<br>
+```
+	make flash
+```
+
+**Step 12**<br>
+For displaying what the board prints, run:<br>
+```
+	make monitor
+```
+
+When you want to stop the printing on the console, just hold `ctrl + ]` hotkey.
