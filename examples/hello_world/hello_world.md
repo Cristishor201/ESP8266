@@ -3,7 +3,7 @@
 
 ## Table of content
 
-- For Ubuntu
+- For [Ubuntu](#ubuntu-directly)
 - For [Ubuntu on VirtualBox](#ubuntu-vBox)
 - For Ubuntu on Android
 
@@ -63,7 +63,12 @@ Add your username to the dialout group:<br>
 Then you need to reboot the PC with `sudo reboot`.
 
 **Step 8**<br>
-Now, you can build with:<br>
+After login change the directory back to:<br>
+```
+	cd ~/esp/hello_world
+```
+
+Then you can build with:<br>
 ```
 	make all
 ```
@@ -158,3 +163,9 @@ For displaying what the board prints, run:<br>
 ```
 
 When you want to stop the printing on the console, just hold `ctrl + ]` hotkey.
+
+<br />
+<h1 id="ubuntu-android">Ubuntu on Android</h1>
+This is the part with instruction about how to build, flash and display the program if you are running ubuntu os. It will print **hello world** on the console, once it is uploded to the board.
+
+**Step 1**<br>
