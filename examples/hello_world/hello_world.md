@@ -13,7 +13,7 @@ This is the part with instruction about how to build, flash and display the prog
 
 **Step 1**<br>
 Login with your credentials, and then start the terminal.<br>
-[poza avuta deja cu terminalul]
+![ubuntu_1](https://github.com/Cristishor201/ESP8266/blob/main/installation/ubuntu-vBox/vBox_41.PNG)
 
 **Step 2**<br>
 Change the directory to esp, with:
