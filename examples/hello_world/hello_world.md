@@ -5,7 +5,6 @@
 
 - For [Ubuntu](#ubuntu-directly)
 - For [Ubuntu on VirtualBox](#ubuntu-vBox)
-- For Ubuntu on Android
 
 <br />
 <h1 id="ubuntu-directly">Ubuntu</h1>
@@ -163,9 +162,3 @@ For displaying what the board prints, run:<br>
 ```
 
 When you want to stop the printing on the console, just hold `ctrl + ]` hotkey.
-
-<br />
-<h1 id="ubuntu-android">Ubuntu on Android</h1>
-This is the part with instruction about how to build, flash and display the program if you are running ubuntu os. It will print **hello world** on the console, once it is uploded to the board.
-
-**Step 1**<br>
